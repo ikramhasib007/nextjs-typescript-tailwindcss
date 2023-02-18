@@ -1,0 +1,11 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+@import "./components/animation.css";
+@import "./components/button.css";
+@import "./components/common.css";
+@import "./components/input.css";
+@import "./components/react-datepicker.css";
+@import "./components/utils.css";
+
+@import "tailwindcss/utilities";
