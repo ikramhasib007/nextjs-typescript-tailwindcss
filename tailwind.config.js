@@ -64,7 +64,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-        serif: ['Merriweather', 'serif'],
+        'open-sans': ['Open Sans', 'sans-serif', ...defaultTheme.fontFamily.serif],
       },
       fontSize: {
         '2.5xl': ['1.625rem', '2rem']
