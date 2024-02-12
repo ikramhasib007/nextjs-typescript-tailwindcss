@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "ANALYZE=true next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -13,6 +13,8 @@
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
     "@hookform/resolvers": "^3.3.4",
+    "@next/bundle-analyzer": "^14.1.0",
+    "@next/third-parties": "^14.1.0",
     "apollo-upload-client": "^18.0.1",
     "graphql": "^16.8.1",
     "graphql-ws": "^5.14.3",
@@ -43,6 +45,7 @@
     "cssnano": "^6.0.3",
     "eslint": "^8.56.0",
     "eslint-config-next": "14.1.0",
+    "eslint-config-prettier": "^9.1.0",
     "postcss": "^8.4.33",
     "postcss-custom-properties": "^13.3.4",
     "postcss-fail-on-warn": "^0.2.1",

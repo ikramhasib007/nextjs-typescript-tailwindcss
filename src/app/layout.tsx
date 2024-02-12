@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import NextTopLoader from 'nextjs-toploader'
-import ApolloProvider from './apollo-provider';
+import ApolloProvider from './apollo-provider'
+import { GoogleTagManager } from '@next/third-parties/google';
 import '../styles/globals.css'
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ export default function RootLayout(props: {
       <body className="min-h-screen h-full bg-gray-100 font-open-sans text-base font-normal tracking-normal">
         <NextTopLoader height={2} color='#4f46e5' showSpinner={false} />
         <ApolloProvider>{props.children}</ApolloProvider>
+        <GoogleTagManager gtmId="GTM-XYZ" />
       </body>
     </html>
   )

@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { YouTubeEmbed } from '@next/third-parties/google'
 import Link from 'next/link'
 
 const navigation = [
@@ -158,6 +159,7 @@ export default function HeroSection() {
             }}
           />
         </div>
+        <YouTubeEmbed videoid="ogfYd705cRs" height={400} params="controls=0" />
       </div>
     </div>
   )
